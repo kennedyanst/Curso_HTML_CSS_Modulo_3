@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Taelas Grandes</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+        thead {
+            background-color: rgba(0, 0, 0, 0.555);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgba(0, 0, 0, 0.555);
+
+
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+        tfoot {
+            background-color: rgba(0, 0, 0, 0.39);
+            color: white;
+        }
+
+        tr.g5{
+            background-color: rgb(90, 230, 114);
+        }
+
+        tr.meio{
+            background-color: rgb(230, 221, 90);
+        }
+
+        tr.z4{
+            background-color: rgb(230, 90, 90);
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgba(59, 197, 202, 0.541);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso Tabelas Grandes</h1>
+    <!--
+        ANATOMIA DE UMA TABELA
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>
+            Classificação do Campeonato Brasileiro de Futebol 2023
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">TIMES</th>
+                <th scope="col" style="width: 50px;">PONTUAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="g5">
+                <td>Botafogo</td>
+                <td>52</td>               
+            </tr>
+            <tr class="g5">
+                <td>Bragantino</td>
+                <td>45</td>
+            </tr>
+            <tr class="g5">
+                <td>Grêmio</td>
+                <td>44</td>
+            </tr>
+            <tr class="g5">
+                <td>Palmeiras</td>
+                <td>44</td>
+            </tr>
+            <tr class="g5">
+                <td>Flamengo</td>
+                <td>43</td>
+            </tr>
+            <tr class="g5">
+                <td>Fluminense</td>
+                <td>41</td>
+            </tr>
+            <tr class="meio">
+                <td>Galinha Preta</td>
+                <td>40</td>
+            </tr>
+            <tr class="meio">
+                <td>Athletico-PR</td>
+                <td>40</td>
+            </tr>
+            <tr class="meio">
+                <td>Fortaleza</td>
+                <td>39</td>
+            </tr>
+            <tr class="meio">
+                <td>São Paulo</td>
+                <td>34</td>
+            </tr>
+            <tr class="meio">
+                <td>Cuiabá</td>
+                <td>32</td>
+            </tr>
+            <tr class="meio">
+                <td>Cruzeiro</td>
+                <td>30</td>
+            </tr>
+            <tr class="meio">
+                <td>Cortinas ao contrario</td>
+                <td>30</td>
+            </tr>
+            <tr class="meio">
+                <td>Internacional</td>
+                <td>29</td>
+            </tr>
+            <tr class="meio">
+                <td>Santos</td>
+                <td>27</td>
+            </tr>
+            <tr class="meio">
+                <td>Goiás</td>
+                <td>27</td>
+            </tr>
+            <tr class="z4">
+                <td>Vasco da Gama</td>
+                <td>26</td>
+            </tr>
+            <tr class="z4">
+                <td>Bahia</td>
+                <td>25</td>
+            </tr>
+            <tr class="z4">
+                <td>América-MG</td>
+                <td>18</td>
+            </tr>
+            <tr class="z4">
+                <td>Coritiba</td>
+                <td>17</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">
+                Total de times
+            </th>
+            <td>
+                20
+            </td>
+        </tfoot>
+    </table>
+</body>
+</html>
